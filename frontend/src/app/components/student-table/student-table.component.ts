@@ -43,7 +43,6 @@ export class StudentTableComponent implements OnInit {
     })
   }
 
-
   getStudentData(){
     this.service.getStudentData().subscribe((response)=>{
       this.studentData = Object.keys(response).map((key) => [response[key]]);
